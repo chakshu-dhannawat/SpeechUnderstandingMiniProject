@@ -29,5 +29,44 @@ Key Highlights:
 
 - VQ(Vector Quantization) can be used to calculate the minimum distance between the given feature set(input signal) and the feature sets of our speakers.
 
+ - We can use voice activity detector (VAD) to retain only spoken parts, in the pipeline, so as to improve overall model performance.
 
 (paper 5 from this list is most relevant)
+
+
+*************************************************************************************
+
+Final Proposal:
+
+
+Based on the findings of the below two papers:
+
+1. K.A. Abdalmalak, A. Gallardo-Antolín
+Enhancement of a text-independent speaker verification system by using feature combination and parallel structure classifiers
+Neural Computing and Applications, 29 (3) (2018), pp. 637-651
+(Link: https://scholar.google.com/scholar_lookup?title=Enhancement%20of%20a%20text-independent%20speaker%20verification%20system%20by%20using%20feature%20combination%20and%20parallel%20structure%20classifiers&publication_year=2018&author=K.A.%20Abdalmalak&author=A.%20Gallardo-Antol%C3%ADn)
+
+2. Mporas, I., Safavi, S., Gan, H. C., & Sotudeh, R. (2016). Evaluation of classification algorithms for text dependent and text independent speaker identification. In: IEICE.
+(Link: https://scholar.google.com/scholar?q=Mporas%2C%20I.%2C%20Safavi%2C%20S.%2C%20Gan%2C%20H.%20C.%2C%20%26%20Sotudeh%2C%20R.%20(2016).%20Evaluation%20of%20classification%20algorithms%20for%20text%20dependent%20and%20text%20independent%20speaker%20identification.%20In%3A%20IEICE.)
+
+
+
+Paper 1 states that speaker's vocals have various patterns to identify/distinguish between them. And each of the feature extraction techniques are non-dependent on one another, and using features(time-domain, frequency-domain, prosodic, and short-term(MFCC's)) in combination yield a better result at Speaker Verification.
+
+In paper 2, the authors have experimented with various classification algorithms for Speaker Verification. In this paper, they have also added the VAD(voice activity detection) in the pre-processing step. They concluded that by using a VAD, they were able to train model having better accuracy.
+
+************************************************
+
+We propose to combine the above mentioned methods, and implement models for the Speaker Identification task.
+
+Framework proposed: 
+- Use VoxCeleb dataset(maybe a subset) for training.
+- Use VAD in pre-processing step.
+- Extract various features: (MFCCs, ΔMFCCs, ΔΔMFCCs) + (Prosodic: Pitch, intensity, Duration) + (Time-domain features: Mean, std, min, max)
+- The 1D features(prosodic, time-domain) will be duplicated for each audio frame, and appended to the set of features.
+- Train 3 models(VQ, GMM, HMM) and evaluate these models, by comparing their SI accuracy.
+
+
+
+
+
