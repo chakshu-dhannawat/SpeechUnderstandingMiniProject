@@ -1,0 +1,33 @@
+References
+
+1. X. Huang, A. Acero, H.-W. Hon
+Spoken Language Processing: a Guide to Theory, Algorithm, and System Development
+
+2. An overview of text-independent speaker recognition: From features to supervectors
+
+3. Douglas A. Reynolds, Thomas F. Quatieri, and Robert B. Dunn, “Speaker Verification Using Adapted Gaussian Mixture Models”, M.I.T. Lincoln Laboratory, 2000
+
+4. Karpov, E., Kinnunen, T., Fränti, P., 2004. Symmetric distortion measure for speaker recognition. In: Proc. Ninth Internat. Conf. on Speech and Computer (SPECOM 2004), St. Petersburg, Russia, September 2004, pp. 366–370.
+(Link: https://scholar.google.com/scholar?q=Karpov%2C%20E.%2C%20Kinnunen%2C%20T.%2C%20Fr%C3%A4nti%2C%20P.%2C%202004.%20Symmetric%20distortion%20measure%20for%20speaker%20recognition.%20In%3A%20Proc.%20Ninth%20Internat.%20Conf.%20on%20Speech%20and%20Computer%20(SPECOM%202004)%2C%20St.%20Petersburg%2C%20Russia%2C%20September%202004%2C%20pp.%20366%E2%80%93370.)
+
+5. Speaker identification through artificial intelligence techniques: A comprehensive review and research challenges
+(Link: https://www.sciencedirect.com/science/article/pii/S0957417421000324)
+
+
+------------------------
+
+Key Highlights:
+
+ - Using MFCC's(13 features) along with the derivative(delta) and second order derivative(delta^2) is usually more beneficial, thus, extracting 39 features.
+   This way, we not only extract  'Short-term spectral features' but also, 'Spectro-temporal features'
+(https://scholar.google.com/scholar_lookup?title=Spoken%20Language%20Processing%3A%20a%20Guide%20to%20Theory%2C%20Algorithm%2C%20and%20System%20Development&publication_year=2001&author=X.%20Huang&author=A.%20Acero&author=H.-W.%20Hon)
+
+ - Two ways of speaker identification/verification: text-dependent and text-independent.
+   For text-independent, generally GMM(or other generative models) work best.
+   For text-independent, discriminative models such as SVM's or probabilistic models such as HMM's work best.
+   (https://www.sciencedirect.com/science/article/pii/S0167639309001289#sec2)
+
+- VQ(Vector Quantization) can be used to calculate the minimum distance between the given feature set(input signal) and the feature sets of our speakers.
+
+
+(paper 5 from this list is most relevant)
