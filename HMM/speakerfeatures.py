@@ -46,5 +46,6 @@ def extract_features(audio,rate):
     return combined
 #    
 if __name__ == "__main__":
+     print("This is a module, and it should be imported to be used")
      print('In main, Call extract_features(audio,signal_rate) as parameters')
      
