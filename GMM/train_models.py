@@ -10,15 +10,12 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-#path to training data
-source   = r"C:\codes\speech understanding minor project\pygender\development_set\\"
-
-# source   = r"C:\codes\speech understanding minor project\pygender\\train_data"   
-
+source   = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set\development_set\\"
+  
 #path where training speakers will be saved
-dest = r"Speaker-identification-using-GMMs/trained_model/"
+dest = r"C:\Users\chaks\SpeechUnderstandingMiniProject\trained_models_GMM\\"
 
-train_file = r"C:\codes\speech understanding minor project\pygender\development_set_enroll.txt"        
+train_file = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set_enroll.txt"        
 
 
 file_paths = open(train_file,'r')

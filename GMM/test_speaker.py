@@ -10,11 +10,11 @@ import time
 
 
 #path to training data
-source   = r"C:\codes\speech understanding minor project\pygender\development_set\\"   
+source   = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set\development_set\\"   
 
-modelpath = r"C:\codes\speech understanding minor project\Speaker-identification-using-GMMs\Speaker-identification-using-GMMs\trained_model"
+modelpath = r"C:\Users\chaks\SpeechUnderstandingMiniProject\trained_models_GMM\\"
 
-test_file = r"C:\codes\speech understanding minor project\pygender\development_set_test.txt"        
+test_file = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set_test.txt"        
 
 file_paths = open(test_file, 'r', encoding='utf-8')
 
