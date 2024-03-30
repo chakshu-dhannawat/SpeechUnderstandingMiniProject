@@ -1,0 +1,28 @@
+Training GMM | Pipeline: MFCC
+Total accuracy: 99.41%
+
+-----------------------------------------------------------------
+Training GMM | Pipeline: MFCC+ MFCC'
+Total accuracy: 99.51%
+
+-----------------------------------------------------------------
+Training GMM | Pipeline: MFCC+ MFCC' + MFCC''
+Testing
+Total accuracy: 99.58%
+-----------------------------------------------------------------
+
+Training GMM | Pipeline: VAD + MFCC
+Testing
+Total accuracy: 96.33%
+-----------------------------------------------------------------
+
+Training GMM | Pipeline: VAD + MFCC + MFCC'
+Testing
+Total accuracy: 96.39%
+-----------------------------------------------------------------
+
+Training GMM | Pipeline: VAD + MFCC+ MFCC' + MFCC''
+Testing
+Total accuracy: 96.45%
+-----------------------------------------------------------------
+

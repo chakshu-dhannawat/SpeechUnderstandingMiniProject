@@ -7,12 +7,13 @@ from speakerfeatures import extract_features
 import warnings
 warnings.filterwarnings("ignore")
 import time
-
+from hmm_utils import log
+from hmm_utils import remove_all_files
 
 #path to training data
 source   = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set\development_set\\"   
 
-modelpath = r"C:\Users\chaks\SpeechUnderstandingMiniProject\trained_models_GMM\\"
+modelpath = r"C:\Users\chaks\SpeechUnderstandingMiniProject\trained_models_HMM\\"
 
 test_file = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set_test.txt"        
 
@@ -80,4 +81,8 @@ for path in file_paths:
     time.sleep(1.0)
 
 accuracy = correct_predictions / total_files * 100
+log("Accuracy on test data")
+log("Total accuracy: {:.2f}%".format(accuracy))
+log("")
 print("Total accuracy: {:.2f}%".format(accuracy))
+# remove_all_files()

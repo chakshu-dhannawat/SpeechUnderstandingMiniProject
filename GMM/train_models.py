@@ -8,7 +8,7 @@ from sklearn import mixture
 from speakerfeatures import extract_features
 import warnings
 warnings.filterwarnings("ignore")
-
+from gmm_utils import log
 
 source   = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set\development_set\\"
   
@@ -22,6 +22,8 @@ file_paths = open(train_file,'r')
 
 count = 1
 
+
+# log("Training GMM | Pipeline: MFCC+ MFCC\' + MFCC\'\'")
 # Extracting features for each speaker (5 files per speakers)
 features = np.asarray(())
 for path in file_paths:    

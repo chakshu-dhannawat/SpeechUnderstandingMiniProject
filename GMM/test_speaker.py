@@ -8,6 +8,7 @@ import warnings
 warnings.filterwarnings("ignore")
 import time
 
+from gmm_utils import remove_all_files, log
 
 #path to training data
 source   = r"C:\Users\chaks\SpeechUnderstandingMiniProject\development_set\development_set\\"   
@@ -80,4 +81,10 @@ for path in file_paths:
     time.sleep(1.0)
 
 accuracy = correct_predictions / total_files * 100
+log("Testing")
+log("Total accuracy: {:.2f}%".format(accuracy))
+log("-----------------------------------------------------------------")
+log("")
 print("Total accuracy: {:.2f}%".format(accuracy))
+
+remove_all_files()

@@ -1,0 +1,33 @@
+
+----------------------------------------------
+Training HMM models; Pipeline: MFCC+(del)MFCC
+Accuracy on test data
+Total accuracy: 84.62%
+
+
+---------------------------------------------------------------------------------------------
+Training HMM models; Pipeline: MFCC
+Accuracy on test data
+Total accuracy: 99.41%
+
+---------------------------------------------------
+Training HMM models; Pipeline: MFCC+(del)MFCC+(del^2)MFCC
+
+
+Accuracy on test data
+Total accuracy: 63.91%
+
+---------------------------------------------------
+Training HMM models; Pipeline: VAD+ MFCC
+Accuracy on test data
+Total accuracy: 86.98%
+
+---------------------------------------------------
+Training HMM models; Pipeline: VAD+ MFCC + (del)MFCC
+Accuracy on test data
+Total accuracy: 70.47%
+
+---------------------------------------------------
+Training HMM models; Pipeline: VAD+ MFCC+ (del)MFCC + (del^2)MFCC
+Accuracy on test data
+Total accuracy: 36.69% ---------------------------------------------------
